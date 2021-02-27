@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_6laba_amp"
         mc:Ignorable="d"
+        Background="{StaticResource background}"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <ResourceDictionary Source="Buttons.xaml" />
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Buttons.xaml" />
+                <ResourceDictionary Source="WindowBG.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Button Content="Night mode" MaxHeight="40" MaxWidth="80" 
